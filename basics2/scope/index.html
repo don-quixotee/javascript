@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>basic javascript</title>
+    
+    </head>
+    <body style="background-color: lightblue;">
+
+       <div style="border: 1px solid grey; padding: 5%;">
+        <h1>function in javascript<strong><em></em>function</strong></h1>
+        <p style="color: green; background-color: black; padding: 20px; font-size: 15px; border: 1px solid green;">
+            /* eslint-disable no-unused-vars */<br>
+
+            const a = 1; const b = 2; const c = 3;<br>
+            
+            (function firstFunction () {<br>
+              const b = 5; const c = 6;<br>
+            
+              (function secondFunction () {<br>
+                const b = 8<br>
+                document.getElementById('demo').innerHTML=('a: ' + a + ', b: ' + b + ', c: ' + c);<br>
+                (function thirdFunction () {<br>
+                  const a = 7; const c = 9;<br>
+            
+                  (function fourthFunction () {<br>
+                    const a = 1; const c = 8<br>
+                  })()<br>
+                })()<br>
+              })()<br>
+            })()
+            
+         
+        </p>
+       </div>
+
+        <h1 style="background-color:green; color: black; width: 200px; margin: 10px 0 10px 0;">output is:-</h1>
+        <div id="demo" style=" color: green; background-color: black; padding: 10%; font-size: 30px;"></div>
+
+
+        <script src="index.js"></script>
+        </body>
+</html>

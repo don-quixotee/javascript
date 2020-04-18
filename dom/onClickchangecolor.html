@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Learning the DOM</title>
+</head>
+
+<body>
+<h1 style="background:grey; color: white; height: 40px; ">change color on click</h1>
+<button id="1stbutton" >click here</button>
+<script>
+    let butt =document.getElementById('1stbutton')
+    butt.addEventListener('click',() => {
+        document.body.style.background='black'
+
+
+    });
+</script>
+
+</body>
+
+</html>
